@@ -5,7 +5,6 @@ function LoginPage() {
   return (
     <div className="login-page">
       <div className="login-container">
-        <h1>Money Mind</h1>
         <form className="login-form">
           <div className="login-title">
             <h1>Welcome Back</h1>
