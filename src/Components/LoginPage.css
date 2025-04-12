@@ -4,21 +4,24 @@ body {
 }
 
 .login-title {
+  margin-top: 38px;
   color: rgb(252, 251, 251);
 }
 
 .login-form {
-  background-color: #181818;
+  background-color: #0f0f0f;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 30px;
   width: 500px;
-  height: 350px;
+  height: 400px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 10px;
-  box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(33, 34, 20, 0.4) 0px 0px 0px 2px,
+    rgba(12, 12, 7, 0.65) 0px 4px 6px -1px,
+    rgba(87, 79, 27, 0.08) 0px 1px 0px inset;
 }
 
 .custom-input-field input {
@@ -32,6 +35,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.login-password {
+  margin-bottom: 15px;
+}
+
 .login-button button {
   text-align: center;
   width: 310px;
@@ -43,7 +50,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: baggound-color 0.3s ease;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .login-button button:hover {
@@ -54,7 +61,7 @@ body {
   text-align: center;
   color: #888;
   position: relative;
-  margin: 24px 0 16px;
+  margin: 30px 0 16px;
 }
 
 .login-divider::before,
@@ -77,7 +84,22 @@ body {
 
 .login-divider span {
   padding: 0 10px;
-  background: #191919;
+  background: #110f0f;
   position: relative;
   z-index: 1;
+}
+
+.login-subtext {
+  margin-top: 30px;
+  color: #918f8f;
+  font-size: 14px;
+}
+
+.login-subtext a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-subtext a:hover {
+  text-decoration: underline;
 }

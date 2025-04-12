@@ -8,10 +8,10 @@ function LoginPage() {
         <h1>Money Mind</h1>
         <form className="login-form">
           <div className="login-title">
-            <h2>Welcome Back</h2>
+            <h1>Welcome Back</h1>
           </div>
           <div className="custom-input-field login-email">
-            <input type="text" placeholder="Email adress" required></input>
+            <input type="email" placeholder="Email adress" required></input>
           </div>
           <div className="custom-input-field login-password">
             <input type="password" placeholder="Password" required></input>
@@ -23,6 +23,9 @@ function LoginPage() {
           <div className="login-divider">
             <span>or</span>
           </div>
+          <p className="login-subtext">
+            Don’t have an account yet? <a href="/signup">Sign up</a>
+          </p>
         </form>
       </div>
     </div>
