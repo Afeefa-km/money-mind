@@ -9,7 +9,7 @@ body {
 }
 
 .login-form {
-  background-color: #0f0f0f;
+  background-color: #161515;
   text-align: center;
   border-radius: 30px;
   width: 500px;
@@ -19,24 +19,42 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 10px;
-  box-shadow: rgba(33, 34, 20, 0.4) 0px 0px 0px 2px,
-    rgba(12, 12, 7, 0.65) 0px 4px 6px -1px,
-    rgba(87, 79, 27, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(108, 108, 109, 0.1) 0px 4px 16px,
+    rgba(100, 100, 102, 0.1) 0px 8px 24px, rgba(83, 83, 85, 0.1) 0px 16px 56px;
 }
 
 .custom-input-field input {
-  background-color: #080808;
+  background-color: #1d1c1c;
   border: none;
   border-radius: 5px;
   color: white;
   width: 300px;
   height: 40px;
-  padding-left: 10px;
+  padding-left: 30px;
   margin-bottom: 1rem;
+  position: relative;
 }
 
-.login-password {
+.login-email .icon {
+  position: absolute;
+  top: 26%;
+  left: 18%;
+  color: rgb(56, 55, 55);
+}
+
+/* .login-password {
   margin-bottom: 15px;
+} */
+
+.login-password input {
+  position: relative;
+}
+
+.login-password .icon {
+  position: absolute;
+  top: 40%;
+  left: 18%;
+  color: rgb(56, 55, 55);
 }
 
 .login-button button {
@@ -84,7 +102,7 @@ body {
 
 .login-divider span {
   padding: 0 10px;
-  background: #110f0f;
+  background: #171717;
   position: relative;
   z-index: 1;
 }

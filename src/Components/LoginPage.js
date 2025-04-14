@@ -11,9 +11,11 @@ function LoginPage() {
           </div>
           <div className="custom-input-field login-email">
             <input type="email" placeholder="Email adress" required></input>
+            <i className="fas fa-envelope icon"></i>
           </div>
           <div className="custom-input-field login-password">
             <input type="password" placeholder="Password" required></input>
+            <i className="fas fa-lock icon"></i>
           </div>
           <div className="login-button">
             <button type="submit">Login</button>
