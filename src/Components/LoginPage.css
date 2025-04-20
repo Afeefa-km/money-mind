@@ -9,7 +9,7 @@ body {
 }
 
 .login-form {
-  background-color: #161515;
+  background-color: #101010;
   text-align: center;
   border-radius: 30px;
   width: 500px;
@@ -19,8 +19,10 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 10px;
-  box-shadow: rgba(108, 108, 109, 0.1) 0px 4px 16px,
-    rgba(100, 100, 102, 0.1) 0px 8px 24px, rgba(83, 83, 85, 0.1) 0px 16px 56px;
+  /* box-shadow: rgba(108, 108, 109, 0.1) 0px 4px 16px,
+    rgba(100, 100, 102, 0.1) 0px 8px 24px, rgba(83, 83, 85, 0.1) 0px 16px 56px; */
+  box-shadow: rgb(233 229 229 / 10%) 0px 4px 16px,
+    rgb(243 240 240 / 10%) 0px 8px 24px, rgb(230 230 236 / 10%) 0px 16px 56px;
 }
 
 .custom-input-field input {
@@ -102,7 +104,7 @@ body {
 
 .login-divider span {
   padding: 0 10px;
-  background: #171717;
+  background: #0b0b0b;
   position: relative;
   z-index: 1;
 }
