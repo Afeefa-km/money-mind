@@ -1,0 +1,45 @@
+.signup-page {
+  background-color: #3c3a3a;
+}
+
+.signup-form {
+  background-color: #101010;
+  text-align: center;
+  border-radius: 30px;
+  width: 500px;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 10px;
+  box-shadow: rgb(51 49 49 / 10%) 0px 4px 16px,
+    rgb(148 142 142 / 10%) 0px 8px 24px, rgb(165 159 159 / 10%) 0px 16px 56px;
+}
+
+.signup-title {
+  color: #f2f2f2;
+  margin-top: 50px;
+}
+
+.custom-input-field:placeholder {
+  text-align: left;
+}
+
+.signup-button button {
+  background-color: #007bff;
+  height: 33px;
+  width: 330px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: baggound-color 0.3s ease;
+}
+
+.signup-button button:hover {
+  background-color: #0056b3;
+}
