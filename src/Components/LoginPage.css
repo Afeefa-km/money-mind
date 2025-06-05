@@ -1,17 +1,18 @@
 body {
-  background-color: #090909;
+  background-color: #e9e4df;
   font-family: "Poppins", sans-serif;
 }
 
 .login-title {
-  margin-top: 38px;
-  color: rgb(252, 251, 251);
+  margin-top: 60px;
+  color: rgb(80 58 58);
 }
 
 .login-form {
-  background-color: #101010;
+  background-color: white;
   text-align: center;
   border-radius: 30px;
+  border: silver;
   width: 500px;
   height: 450px;
   position: absolute;
@@ -24,10 +25,10 @@ body {
 }
 
 .custom-input-field input {
-  background-color: #1d1c1c;
-  border: none;
+  background-color: rgb(243 240 240);
+  border: 1px solid #ebe3db;
   border-radius: 5px;
-  color: white;
+  color: rgb(28, 28, 28);
   width: 300px;
   height: 40px;
   padding-left: 30px;
@@ -66,7 +67,7 @@ body {
   text-align: center;
   width: 329px;
   height: 40px;
-  background-color: #007bff;
+  background-color: rgb(80 58 58);
   color: white;
   border: none;
   border-radius: 5px;
@@ -74,10 +75,11 @@ body {
   cursor: pointer;
   transition: baggound-color 0.3s ease;
   margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 .login-button button:hover {
-  background-color: #0056b3;
+  background-color: rgb(62, 44, 44);
 }
 
 .login-divider {
@@ -107,7 +109,7 @@ body {
 
 .login-divider span {
   padding: 0 10px;
-  background: #101010;
+  background: white;
   position: relative;
   z-index: 1;
 }
@@ -119,7 +121,7 @@ body {
 }
 
 .login-subtext span {
-  color: white;
+  color: rgb(80 58 58);
   text-decoration: none;
 }
 

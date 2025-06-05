@@ -29,9 +29,6 @@ function LoginPage() {
     if (!password) {
       setPasswordError("Password is required");
       valid = false;
-    } else if (password.length < 6) {
-      setPasswordError("Password must be at least 6 characters long");
-      valid = false;
     } else {
       setPasswordError("");
     }
