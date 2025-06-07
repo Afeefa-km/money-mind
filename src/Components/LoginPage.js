@@ -6,7 +6,7 @@ function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
-  const [error, setError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
   const navigate = useNavigate();
 
   const handleSingUpClick = () => {
@@ -27,10 +27,10 @@ function LoginPage() {
     }
 
     if (!password) {
-      setError("Password is required");
+      setPasswordError("Password is required");
       valid = false;
     } else {
-      setError("");
+      setPasswordError("");
     }
     return valid;
   };
@@ -48,7 +48,7 @@ function LoginPage() {
       console.log("login successfull");
       navigate("/home");
     } else {
-      setError("Invalid email or password");
+      setPasswordError("Invalid email or password");
       console.log("login failed");
     }
   };
@@ -69,7 +69,13 @@ function LoginPage() {
               onChange={(e) => setEmail(e.target.value)}
             ></input>
             <i className="fas fa-envelope icon"></i>
-            {emailError && <p className="login-error">{emailError}</p>}
+            <div className="login-error">
+              <p
+                className={`login-error-message ${emailError ? "visible" : ""}`}
+              >
+                {emailError || "\u00A0"}
+              </p>
+            </div>
           </div>
 
           <div className="custom-input-field login-password">
@@ -82,9 +88,13 @@ function LoginPage() {
             <i className="fas fa-lock icon"></i>
 
             <div className="login-error">
-              {error && (
-                <p className={`login-error-message ${error ? "visible" : ""}`}>
-                  {error || "\u00A0"}
+              {setPasswordError && (
+                <p
+                  className={`login-error-message ${
+                    passwordError ? "visible" : ""
+                  }`}
+                >
+                  {passwordError || "\u00A0"}
                 </p>
               )}
             </div>
