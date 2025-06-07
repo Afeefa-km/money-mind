@@ -17,6 +17,9 @@ function SignUpPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+
     if (password !== confirmPassword) {
       setError("Passwords do not match");
       return;

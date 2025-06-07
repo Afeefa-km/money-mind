@@ -6,7 +6,7 @@ function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
-  const [passwordError, setPasswordError] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSingUpClick = () => {
@@ -27,19 +27,29 @@ function LoginPage() {
     }
 
     if (!password) {
-      setPasswordError("Password is required");
+      setError("Password is required");
       valid = false;
     } else {
-      setPasswordError("");
+      setError("");
     }
-
     return valid;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
-      console.log("Login successful");
+    if (!validate()) {
+      return;
+    }
+
+    const storedEmail = localStorage.getItem("email");
+    const storedPassword = localStorage.getItem("password");
+
+    if (email === storedEmail && password === storedPassword) {
+      console.log("login successfull");
+      navigate("/home");
+    } else {
+      setError("Invalid email or password");
+      console.log("login failed");
     }
   };
 
@@ -70,7 +80,14 @@ function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
             ></input>
             <i className="fas fa-lock icon"></i>
-            {passwordError && <p className="login-error"> {passwordError}</p>}
+
+            <div className="login-error">
+              {error && (
+                <p className={`login-error-message ${error ? "visible" : ""}`}>
+                  {error || "\u00A0"}
+                </p>
+              )}
+            </div>
           </div>
           <div className="login-button">
             <button type="submit">Login</button>
